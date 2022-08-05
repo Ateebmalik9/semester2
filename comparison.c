@@ -1,3 +1,4 @@
+//comparison of three distinct integers
 #include<stdio.h>
 int main()
 {
