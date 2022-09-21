@@ -1,0 +1,49 @@
+//sum of 2 matrices
+#include<stdio.h>
+int main()
+{
+	int a[100][100],b[100][100],sum[100][100],i,j,r,c;
+		 /* to get the size of the matrix */
+	printf("Enter the no. of rows and columns_ ");
+	scanf("%d %d",&r,&c);
+	/*to get the values of the matrices */
+	printf("Enter the values for matrix 1");
+	for(i=0;i<r;++i)
+	for(j=0;j<c;++j)
+	scanf("%d",&a[i][j]);
+	printf(" The given matrix 1_ :\n");
+	for(i=0;i<r;++i)
+	{
+	for(j=0;j<c;++j)
+	{
+		printf("%d ",a[i][j]);
+	}
+	printf("\n");
+    }
+    printf("Enter the values for matrix 2_ ");
+	for(i=0;i<r;++i)
+	for(j=0;j<c;++j)
+	scanf("%d",&b[i][j]);
+	printf(" The given matrix 2_ \n");
+	for(i=0;i<r;++i)
+	{
+	for(j=0;j<c;++j)
+	{
+		printf("%d ",b[i][j]);
+	}
+	printf("\n");
+    }
+    for(i=0;i<r;++i)
+	 for(j=0;j<c;++j)
+	  sum[i][j]=a[i][j]+b[i][j];
+	  printf("The sum of the matrices \n");
+	for(i=0;i<r;++i)
+	{
+	for(j=0;j<c;++j)
+	{
+		printf("%d ",sum[i][j]);
+	}
+	printf("\n");
+	}
+return 0;
+}
